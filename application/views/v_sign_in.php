@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sign In</title>
+	<link rel="stylesheet" href="">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+	
+</style>
+
+
+</head>
+<body>
+
+<div class="container ">
+	<div class="row " style="padding-top: 120px;">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please Sign In</h3>
+                </div>
+                <div class="panel-body">
+                    <form class="form" method="POST" action="<?php echo base_url()?>c_user/sign_in">
+                        <fieldset>
+                            <div class="form-group" >
+                                <input class="form-control" placeholder="Username" name="username" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                            </div>
+                            <div class="form-group">
+                            <button type="submit" name="sign_in"  class="btn btn-success btn-block">Sign In</button>
+                                
+                            </div >
+                            <!-- Change this to a button or input when using this as a form -->
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+</body>
+</html>
